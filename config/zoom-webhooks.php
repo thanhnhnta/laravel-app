@@ -17,6 +17,7 @@ return [
      */
     'jobs' => [
          'meeting_started' => \BinaryCats\ZoomWebhooks\Jobs\HandleMeetingStarted::class,
+         'meeting_ended' => \BinaryCats\ZoomWebhooks\Jobs\HandleMeetingEnded::class,
     ],
 
     /*

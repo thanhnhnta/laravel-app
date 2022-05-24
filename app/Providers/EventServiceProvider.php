@@ -21,6 +21,9 @@ class EventServiceProvider extends ServiceProvider
         'zoom-webhooks::meeting.started' => [
             App\Listeners\Zoom\MeetingStarted::class,
         ],
+        'zoom-webhooks::meeting.ended' => [
+            App\Listeners\Zoom\MeetingEnded::class,
+        ],
     ];
 
     /**

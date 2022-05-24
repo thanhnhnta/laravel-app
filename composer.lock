@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "fe8c772215030e8310ae35798cdccca5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,73 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
             "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+            "name": "binary-cats/laravel-zoom-webhooks",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/binary-cats/laravel-zoom-webhooks.git",
+                "reference": "83f221fe020c1816b905a547f732dafe8084beab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/binary-cats/laravel-zoom-webhooks/zipball/83f221fe020c1816b905a547f732dafe8084beab",
+                "reference": "83f221fe020c1816b905a547f732dafe8084beab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+                "php": "^7.2|^8.0",
+                "spatie/laravel-webhook-client": "^2.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.8.0|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.2|^9.0"
+            },
+            "suggest": {
+                "binary-cats/laravel-lob-webhooks": "^1.0",
+                "binary-cats/laravel-mailgun-webhooks": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BinaryCats\\ZoomWebhooks\\ZoomWebhooksServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BinaryCats\\ZoomWebhooks\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cyrill Kalita",
+                    "email": "cyrill.kalita@gmail.com",
+                    "homepage": "https://github.com/binary-cats",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle Zoom.us webhooks in a Laravel application",
+            "homepage": "https://github.com/binary-cats/laravel-zoom-webhooks",
+            "keywords": [
+                "binary-cats",
+                "laravel",
+                "webhooks",
+                "zoom",
+                "zoom.us"
+            ],
+            "support": {
+                "issues": "https://github.com/binary-cats/laravel-zoom-webhooks/issues",
+                "source": "https://github.com/binary-cats/laravel-zoom-webhooks/tree/1.0.1"
+            },
+            "time": "2021-01-31T01:52:35+00:00"
         },
         {
             "name": "brick/math",
@@ -2855,6 +2922,73 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "spatie/laravel-webhook-client",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-webhook-client.git",
+                "reference": "ff52ee0ca6edbb1acd62c083877bceba35f40f93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-webhook-client/zipball/ff52ee0ca6edbb1acd62c083877bceba35f40f93",
+                "reference": "ff52ee0ca6edbb1acd62c083877bceba35f40f93",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/bus": "^8.0",
+                "illuminate/database": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^8.0|^7.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\WebhookClient\\WebhookClientServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\WebhookClient\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Receive webhooks in Laravel apps",
+            "homepage": "https://github.com/spatie/laravel-webhook-client",
+            "keywords": [
+                "laravel-webhook-client",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-webhook-client/issues",
+                "source": "https://github.com/spatie/laravel-webhook-client/tree/2.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-04-07T22:55:11+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -16,7 +16,7 @@ return [
      * https://marketplace.zoom.us/docs/api-reference/webhook-reference#events.
      */
     'jobs' => [
-        // 'meeting_started' => \BinaryCats\ZoomWebhooks\Jobs\HandleMeetingStarted::class,
+         'meeting_started' => \BinaryCats\ZoomWebhooks\Jobs\HandleMeetingStarted::class,
     ],
 
     /*

@@ -18,6 +18,9 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        'zoom-webhooks::meeting.started' => [
+            App\Listeners\Zoom\MeetingStarted::class,
+        ],
     ];
 
     /**

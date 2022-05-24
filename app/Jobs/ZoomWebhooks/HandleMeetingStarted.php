@@ -7,6 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Support\Facades\Log;
 use Spatie\WebhookClient\Models\WebhookCall;
 
 class HandleMeetingStarted implements ShouldQueue
@@ -26,5 +27,6 @@ class HandleMeetingStarted implements ShouldQueue
         // do your work here
 
         // you can access the payload of the webhook call with `$this->webhookCall->payload`
+        Log::info($this->webhookCall->payload);
     }
 }

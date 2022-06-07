@@ -17,3 +17,6 @@ Route::zoomWebhooks('webhooks/zoom');
 //    return view('welcome');
 //});
 Route::get('/',[\App\Http\Controllers\ZoomController::class,'index']);
+Route::get('test/form', function () {
+    return view('test/form');
+});

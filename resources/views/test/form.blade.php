@@ -6,8 +6,8 @@
     <script>
         function start() {
             gapi.client.init({
-                //'apiKey': 'AIzaSyD9xob5sCFr3ftF5n2M7Q7SSLiJ9reCtHg',
-                'apiKey': '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',
+                'apiKey': 'AIzaSyD9xob5sCFr3ftF5n2M7Q7SSLiJ9reCtHg',
+                //'apiKey': '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',
                 // Your API key will be automatically added to the Discovery Document URLs.
                 'discoveryDocs': ['https://people.googleapis.com/$discovery/rest'],
                 // clientId and scope are optional if auth is not required.

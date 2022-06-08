@@ -6,18 +6,13 @@
     <script>
         function start() {
             gapi.client.init({
-                'apiKey': 'AIzaSyD9xob5sCFr3ftF5n2M7Q7SSLiJ9reCtHg',
+                //'apiKey': 'AIzaSyD9xob5sCFr3ftF5n2M7Q7SSLiJ9reCtHg',
+                'apiKey': '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',
                 // Your API key will be automatically added to the Discovery Document URLs.
                 'discoveryDocs': ['https://people.googleapis.com/$discovery/rest'],
                 // clientId and scope are optional if auth is not required.
-                'clientId': '363141720512-9hhorfordmbib5ev9bdq3q7i110qmooj.apps.googleusercontent.com',
+                'clientId': '363141720512-gs1r4e7ni17do4iuurn9fdd8of5vf7aq.apps.googleusercontent.com',
                 'scope': 'profile',
-            }).then(function() {
-                // 3. Initialize and make the API request.
-                return gapi.client.people.people.get({
-                    'resourceName': 'people/me',
-                    'requestMask.includeField': 'person.names'
-                });
             });
         };
 

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::zoomWebhooks('webhooks/zoom');
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::get('/',[\App\Http\Controllers\ZoomController::class,'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('zoom',[\App\Http\Controllers\ZoomController::class,'index']);
